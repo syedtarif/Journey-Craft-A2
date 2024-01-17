@@ -6,6 +6,7 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+
 .input-field {
     width: 195px;
     height: 52px;
@@ -29,11 +30,17 @@ body {
     font-weight: 800;
 }
 
+.second-heading-title {
+    color: #131318;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
 .text-style {
-    color: #FFF;
+    color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 .btn-style {
@@ -49,7 +56,7 @@ body {
 }
 
 
-/* ----- banner section styles */
+/* ---------------------------------- banner section styles */
 .banner-section {
     background-image: url(../images/Group\ 13.png);
     width: 1195px;
@@ -57,6 +64,7 @@ body {
     border-radius: 16px;
 
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .banner-content {
@@ -69,9 +77,14 @@ body {
     padding-top: 40px;
 }
 
-.text-style {
+.banner-text-style {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+
     max-width: 700px;
     text-align: center;
+    color: #FFF;
 }
 
 #input-text {
@@ -89,25 +102,61 @@ body {
     border-radius: 8px;
 }
 
+/* ---------------------------------- popular tours section styles */
+.popular-tours {
+    width: 1195px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 
-/* -----> responsiveness for mobile device */
+.popular-tours .second-heading-title {
+    margin-top: 0;
+}
+
+.popular-tours button {
+    margin-top: 25px;
+}
+
+.popular-tours ul li {
+    max-width: 500px;
+}
+
+.popular-tours p {
+    max-width: 610px;
+    /* border: 2px solid blue; */
+}
+
+
+
+/* ---------------------------------- responsiveness for mobile device */
 @media screen and (max-width: 600px) {
+
+    /* ---------shared responsiveness styles */
+    .input-container,
+    .popular-tours {
+        flex-direction: column;
+    }
+
+
+    .banner-text-style,
+    .text-style {
+        max-width: 350px;
+        font-size: 0.8rem;
+    }
+
+    /* -----------------------banner section responsiveness */
     .banner-section {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: auto;
-        /* border: 2px solid red; */
     }
 
     .heading-title {
         font-size: 2rem;
-    }
-
-    .text-style {
-        max-width: 350px;
-        font-size: 0.8rem;
     }
 
     .input-field {
@@ -129,4 +178,17 @@ body {
         margin: 30px 0 60px 0;
     }
 
+    /* -----------------------popular-tours section responsiveness */
+    .popular-tours,
+    .popular-tours img {
+        width: 100%;
+    }
+
+    .popular-tours button {
+        margin-bottom: 30px;
+    }
+
+    .second-heading-title {
+        font-size: 1.8rem;
+    }
 }
