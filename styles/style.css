@@ -8,13 +8,15 @@ body {
 
 .banner-section,
 .popular-tours,
-.choose-destination {
+.choose-destination,
+.why-choose-us {
     width: 1195px;
     margin: 0 auto;
     margin-bottom: 100px;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
+
 
 .input-field {
     width: 195px;
@@ -45,6 +47,12 @@ body {
     font-weight: 800;
 }
 
+.third-heading-style {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
 .text-style {
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -62,6 +70,23 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 700;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.best-services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+.destination-text,
+.why-choose-text {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 
@@ -131,18 +156,33 @@ body {
 }
 
 /* ---------------------------------- choose-destination section styles */
-.destination-text {
+/* .destination-text,
+.why-choose-text {
     text-align: center;
     margin-bottom: 40px;
+} */
+
+/* ---------------------------------- why-choose-us section styles */
+.single-service {
+    width: 500px;
+    height: 284px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+
+    /* padding: 32px 0 0 32px; */
+    padding: 32px;
 }
 
-.row-one,
-.row-two,
-.row-three {
+#unique-single-service {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
 
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.why-choose-us .single-service-center {
+    margin: 0 auto;
+    margin-top: 45px;
 }
 
 
@@ -151,11 +191,21 @@ body {
 @media screen and (max-width: 600px) {
 
     /* ---------shared responsiveness styles */
+    .popular-tours,
+    .popular-tours img,
+    .choose-destination,
+    .why-choose-us,
+    .single-service,
+    single-service-center {
+        width: 100%;
+    }
+
     .input-container,
     .popular-tours,
     .row-one,
     .row-two,
-    .row-three {
+    .row-three,
+    .best-services {
         flex-direction: column;
         align-items: center;
     }
@@ -200,11 +250,11 @@ body {
     }
 
     /* -----------------------popular-tours section responsiveness */
-    .popular-tours,
+    /* .popular-tours,
     .popular-tours img,
     .choose-destination {
         width: 100%;
-    }
+    } */
 
     .popular-tours button {
         margin-bottom: 30px;
@@ -225,5 +275,37 @@ body {
         width: 335px;
         height: 176px;
         margin-bottom: 16px;
+    }
+
+    /* -----------------------why-choose-us section responsiveness */
+    /* .single-service {
+        width: 500px;
+        height: 284px;
+    } */
+
+    .single-service,
+    single-service-center {
+        width: 260px;
+        height: 240px;
+    }
+
+    /* .single-service,
+    .single-service-center {
+        padding: 0;
+        margin-top: -25px;
+        margin-bottom: 40px;
+    } */
+
+    .best-services .single-service {
+        margin-bottom: 40px;
+    }
+
+    /* .single-service-center {
+        margin-top: -28px;
+        margin-bottom: 0;
+    } */
+
+    .why-choose-us .single-service-center {
+        margin-top: -28px;
     }
 }
