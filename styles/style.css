@@ -6,6 +6,15 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+.banner-section,
+.popular-tours,
+.choose-destination {
+    width: 1195px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    border: 2px solid green;
+}
 
 .input-field {
     width: 195px;
@@ -58,13 +67,10 @@ body {
 
 /* ---------------------------------- banner section styles */
 .banner-section {
-    background-image: url(../images/Group\ 13.png);
-    width: 1195px;
     height: 500px;
+    background-image: url(../images/Group\ 13.png);
     border-radius: 16px;
 
-    margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .banner-content {
@@ -102,13 +108,10 @@ body {
     border-radius: 8px;
 }
 
-/* ---------------------------------- popular tours section styles */
+/* ---------------------------------- popular-tours section styles */
 .popular-tours {
-    width: 1195px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 .popular-tours .second-heading-title {
@@ -125,7 +128,21 @@ body {
 
 .popular-tours p {
     max-width: 610px;
-    /* border: 2px solid blue; */
+}
+
+/* ---------------------------------- choose-destination section styles */
+.destination-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 
@@ -135,8 +152,12 @@ body {
 
     /* ---------shared responsiveness styles */
     .input-container,
-    .popular-tours {
+    .popular-tours,
+    .row-one,
+    .row-two,
+    .row-three {
         flex-direction: column;
+        align-items: center;
     }
 
 
@@ -180,7 +201,8 @@ body {
 
     /* -----------------------popular-tours section responsiveness */
     .popular-tours,
-    .popular-tours img {
+    .popular-tours img,
+    .choose-destination {
         width: 100%;
     }
 
@@ -190,5 +212,18 @@ body {
 
     .second-heading-title {
         font-size: 1.8rem;
+    }
+
+    /* -----------------------choose-destination section responsiveness */
+    .row-one,
+    .row-two,
+    .row-three {
+        margin-bottom: 0;
+    }
+
+    .choose-destination img {
+        width: 335px;
+        height: 176px;
+        margin-bottom: 16px;
     }
 }
