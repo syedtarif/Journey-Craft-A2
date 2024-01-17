@@ -4,6 +4,9 @@
 
 body {
     font-family: 'Mulish', sans-serif;
+
+    margin: 0;
+    padding: 0;
 }
 
 .banner-section,
@@ -47,6 +50,12 @@ body {
 }
 
 .third-heading-style {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.fourth-heading-style {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
@@ -224,10 +233,54 @@ body {
 }
 
 
+/* ---------------------------------- footer section styles */
+.footer-section {
+    height: 500px;
+
+    background: rgba(19, 19, 24, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.footer-header img {
+    width: 40px;
+    height: 46.673px;
+}
+
+.third-heading-style span {
+    color: #FF5400;
+}
+
+.footer-section .text-style {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.footer-section hr {
+    width: 50%;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 70px 0 50px 0;
+}
+
+
 /* ---------------------------------- responsiveness for mobile device */
 @media screen and (max-width: 600px) {
 
     /* ---------shared responsiveness styles */
+    body {
+        margin: 5px;
+        padding: 5px;
+    }
+
     .popular-tours,
     .popular-tours img,
     .choose-destination,
@@ -253,7 +306,6 @@ body {
 
     .banner-text-style,
     .text-style {
-        max-width: 350px;
         font-size: 0.8rem;
     }
 
@@ -314,7 +366,7 @@ body {
     .single-service,
     single-service-center {
         width: 260px;
-        height: 240px;
+        height: 320px;
     }
 
     .best-services .single-service {
@@ -330,5 +382,15 @@ body {
         width: 80%;
         margin: 0;
         margin-bottom: 30px;
+    }
+
+    /* -----------------------footer section responsiveness */
+    .fourth-heading-style {
+        font-size: 1.8rem;
+    }
+
+    .footer-section hr {
+        width: 75%;
+        margin: 50px 0 40px 0;
     }
 }
