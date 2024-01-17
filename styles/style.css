@@ -9,12 +9,11 @@ body {
 .banner-section,
 .popular-tours,
 .choose-destination,
-.why-choose-us {
+.why-choose-us,
+.newsletter-part {
     width: 1195px;
     margin: 0 auto;
     margin-bottom: 100px;
-
-    /* border: 2px solid green; */
 }
 
 
@@ -171,7 +170,6 @@ body {
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 
-    /* padding: 32px 0 0 32px; */
     padding: 32px;
 }
 
@@ -185,6 +183,45 @@ body {
     margin-top: 45px;
 }
 
+/* ---------------------------------- newsletter section styles */
+.newsletter-part {
+    display: flex;
+}
+
+.newsletter-input-container {
+    width: 474px;
+
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-input-container {
+    padding: 30px;
+    margin-right: 30px;
+}
+
+.newsletter-input-container hr {
+    margin: 20px 0;
+}
+
+.newsletter-input input {
+    width: 96%;
+    height: 26px;
+    font-size: 1rem;
+    display: block;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    /* padding: 16px 0 16px 20px; */
+    padding: 12px 0 12px 16px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-input button {
+    width: 100%;
+    font-size: 1.4rem;
+}
 
 
 /* ---------------------------------- responsiveness for mobile device */
@@ -196,7 +233,9 @@ body {
     .choose-destination,
     .why-choose-us,
     .single-service,
-    single-service-center {
+    single-service-center,
+    .newsletter-part,
+    .newsletter-part img {
         width: 100%;
     }
 
@@ -205,7 +244,8 @@ body {
     .row-one,
     .row-two,
     .row-three,
-    .best-services {
+    .best-services,
+    .newsletter-part {
         flex-direction: column;
         align-items: center;
     }
@@ -243,19 +283,12 @@ body {
         width: 350px;
         flex-direction: column;
         align-items: center;
-        /* border: 2px solid red; */
 
         padding: 0 0 20px 0;
         margin: 30px 0 60px 0;
     }
 
     /* -----------------------popular-tours section responsiveness */
-    /* .popular-tours,
-    .popular-tours img,
-    .choose-destination {
-        width: 100%;
-    } */
-
     .popular-tours button {
         margin-bottom: 30px;
     }
@@ -278,34 +311,24 @@ body {
     }
 
     /* -----------------------why-choose-us section responsiveness */
-    /* .single-service {
-        width: 500px;
-        height: 284px;
-    } */
-
     .single-service,
     single-service-center {
         width: 260px;
         height: 240px;
     }
 
-    /* .single-service,
-    .single-service-center {
-        padding: 0;
-        margin-top: -25px;
-        margin-bottom: 40px;
-    } */
-
     .best-services .single-service {
         margin-bottom: 40px;
     }
 
-    /* .single-service-center {
-        margin-top: -28px;
-        margin-bottom: 0;
-    } */
-
     .why-choose-us .single-service-center {
         margin-top: -28px;
+    }
+
+    /* -----------------------newsletter section responsiveness */
+    .newsletter-input-container {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 30px;
     }
 }
